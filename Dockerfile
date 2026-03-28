@@ -1,12 +1,12 @@
 # Build stage
-FROM maven:3.8.4-openjdk-17 AS builder
+FROM maven:3.9.6-eclipse-temurin-17 AS builder
 WORKDIR /app
-COPY pom.xml
+COPY pom.xml .
 COPY src ./src
 RUN mvn -B -DskipTests package
 
 # Run stage
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jre
 WORKDIR /app
 COPY --from=builder /app/target/*.jar app.jar
 EXPOSE 8080
