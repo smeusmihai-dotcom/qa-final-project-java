@@ -1,0 +1,7 @@
+1. Trimite un GET request la adresa https://jsonplaceholder.typicode.com/todos/1
+2. Salveaza raspunsul.
+3. Verifica daca raspunsul este 200.
+//Prin api primim o structura de date care trebuie parsata intr-un fisier tip JSON pentru a putea inspecta elementele.
+4. Salveaza raspunsul ca si JSON.
+5. Verifica daca fisierul JSON salvat contine "title".
+6. Testul se considera trecut daca ambele conditii sunt adevarate.
