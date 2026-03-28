@@ -1,0 +1,8 @@
+env: "dev"
+
+service:
+  baseUrl: "https://apps.qualiadept.eu/hapifyme"
+
+timeouts:
+  implicit: 5000
+  explicit: 10000
